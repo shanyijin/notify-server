@@ -12,7 +12,7 @@
 import dayjs from '../../../utils/dayjs'
 
 // 相识的日子
-const start_stamp = '2021-03-26'
+const start_stamp = '2022-01-24'
 
 export const textCardTemplate = (data: TextCardTemplateProps) => {
   const {
@@ -91,7 +91,7 @@ ${win}：${win_speed_day}
       //   url: 'https://api.lovelive.tools/api/SweetNothings',
       //   url: 'https://v1.jinrishici.com/all.svg',
       url: 'https://api.vvhan.com/api/60s', // 60s看世界
-      btntxt: 'By崽崽',
+      btntxt: 'By · 江',
     },
   }
 }
