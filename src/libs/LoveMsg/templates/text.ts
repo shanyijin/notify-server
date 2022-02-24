@@ -25,8 +25,6 @@ export const textTemplate = (data: TextTemplateProps) => {
 
   // 添加笑话
   if (caiHongpi) {
-    //     text += `
-    // 彩虹屁：
     text += `
 ${caiHongpi.content}\n`
   }

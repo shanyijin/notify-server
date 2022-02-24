@@ -6,7 +6,7 @@ import { getTian } from '../utils/http'
  */
 enum LoveMsgURL {
   // 天气
-  weather = 'https://v0.yiketianqi.com/api?unescape=1&version=v61&appid=43656176&appsecret=I42og6Lm',
+  weather = 'https://v0.yiketianqi.com/api?unescape=1&version=v61&appid=32934627&appsecret=YWDRPJ6Z',
   // 每日简报
   dailyBriefing = 'http://api.tianapi.com/bulletin/index',
   // 今日头条
@@ -53,6 +53,7 @@ class API {
   async getWeather(city_name: string): Promise<IWeatherResponseProps | null> {
     try {
       const response = await axios({ url: LoveMsgURL.weather, params: { city: city_name } })
+      console.log(response, '11111111111111111111111111111111111111111111111111111111111111')
       const result = response.data
       // 预警天气
       if (!result.alarm.alarm_type && !result.alarm_content)
